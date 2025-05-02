@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharakeh - Middle East's Premier Platform for Company Insights</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        /* Header styles */
+        header {
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0066cc;
+        }
+        
+        .main-nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .main-nav a {
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+        }
+        
+        .auth-nav {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .auth-nav .language {
+            margin-right: 1rem;
+            color: #444;
+        }
+        
+        .auth-nav a {
+            text-decoration: none;
+        }
+        
+        .sign-in {
+            color: #0066cc;
+        }
+        
+        .sign-up {
+            background-color: #0066cc;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        
+        /* Hero section */
+        .hero {
+            padding: 4rem 5%;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+        
+        .hero p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+        
+        /* Features section */
+        .features {
+            padding: 3rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            background-color: white;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 0.75rem;
+            color: #222;
+        }
+        
+        .feature-card p {
+            margin-bottom: 1rem;
+            color: #666;
+        }
+        
+        .feature-card a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        /* Featured companies */
+        .featured {
+            padding: 3rem 5%;
+            background-color: #f9f9f9;
+        }
+        
+        .featured h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #222;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 3rem 5%;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #f9f9f9;
+        }
+        
+        .footer-section p {
+            color: #ccc;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 1.5rem;
+            border-top: 1px solid #444;
+            color: #aaa;
+        }
+        
+        .footer-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .footer-nav a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .main-nav {
+                display: none;
+            }
+            
+            .auth-nav .language {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Sharakeh</div>
+        <nav class="main-nav">
+            <a href="#">Companies</a>
+            <a href="#">People</a>
+            <a href="#">Reports</a>
+            <a href="#">Blog</a>
+        </nav>
+        <div class="auth-nav">
+            <span class="language">English</span>
+            <a href="#" class="sign-in">Sign In</a>
+            <a href="#" class="sign-up">Sign Up</a>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Middle East's Premier Platform for Company Insights</h1>
+        <p>Access comprehensive data about Middle Eastern companies, executives, and market trends</p>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card">
+            <h3>Companies</h3>
+            <p>Access detailed information about leading Middle Eastern companies</p>
+            <a href="#">Explore</a>
+        </div>
+        <div class="feature-card">
+            <h3>Executives</h3>
+            <p>Connect with influential business leaders in the region</p>
+            <a href="#">Explore</a>
+        </div>
+        <div class="feature-card">
+            <h3>Market Reports</h3>
+            <p>Get insights into market trends and analysis</p>
+            <a href="#">Explore</a>
+        </div>
+        <div class="feature-card">
+            <h3>Industry Blog</h3>
+            <p>Read the latest news and thought leadership</p>
+            <a href="#">Explore</a>
+        </div>
+    </section>
+    
+    <!-- Featured Companies -->
+    <section class="featured">
+        <h2>Featured Companies</h2>
+        <p style="text-align: center; margin-bottom: 2rem;">Discover leading organizations in the Middle East</p>
+        <!-- Here you would add a grid or carousel of featured companies -->
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Sharakeh</h3>
+                <p>The leading platform for company insights and executive data across the Middle East</p>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Reports</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Sales</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <nav class="footer-nav">
+                <a href="#">Sharakeh</a>
+                <a href="#">Companies</a>
+                <a href="#">People</a>
+                <a href="#">Reports</a>
+                <a href="#">Blog</a>
+            </nav>
+            <p>© 2025 Sharakeh. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
