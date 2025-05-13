@@ -11,6 +11,9 @@
     <header>
         <nav>
             <div class="logo">Sharakeh</div>
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+              <i class="fas fa-bars"></i>
+          </button>
             <ul class="nav-links">
                 <li><a href="#companies">Companies</a></li>
                 <li><a href="#people">People</a></li>
@@ -61,17 +64,17 @@
             <div class="stats-section">
                 <div class="stat-card">
                     <i class="fas fa-building"></i>
-                    <div class="stat-number">340</div>
+                    <div class="stat-number"></div>
                     <div class="stat-label">Businesses</div>
                 </div>
                 <div class="stat-card">
                     <i class="fas fa-project-diagram"></i>
-                    <div class="stat-number">67</div>
+                    <div class="stat-number"></div>
                     <div class="stat-label">Sector</div>
                 </div>
                 <div class="stat-card">
                     <i class="fas fa-store"></i>
-                    <div class="stat-number">84</div>
+                    <div class="stat-number"></div>
                     <div class="stat-label">Practice Area</div>
                 </div>
             </div>
@@ -10170,5 +10173,38 @@
         filterAndUpdateCharts();
     });
     </script>
+    <script>
+      // Mobile menu functionality
+      const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+      const navLinks = document.querySelector('.nav-links');
+      const navActions = document.querySelector('.nav-actions');
+  
+      mobileMenuBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          navActions.classList.toggle('active');
+          mobileMenuBtn.querySelector('i').classList.toggle('fa-bars');
+          mobileMenuBtn.querySelector('i').classList.toggle('fa-times');
+      });
+  
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', (e) => {
+          if (!e.target.closest('nav')) {
+              navLinks.classList.remove('active');
+              navActions.classList.remove('active');
+              mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+              mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+          }
+      });
+  
+      // Close mobile menu when clicking a link
+      document.querySelectorAll('.nav-links a').forEach(link => {
+          link.addEventListener('click', () => {
+              navLinks.classList.remove('active');
+              navActions.classList.remove('active');
+              mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+              mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+          });
+      });
+  </script>
 </body>
 </html> 
